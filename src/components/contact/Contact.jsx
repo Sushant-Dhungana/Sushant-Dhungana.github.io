@@ -3,8 +3,8 @@ import "./Contact.css";
 import emailjs from '@emailjs/browser';
 import {useRef} from 'react';
 
-
 function Contact() {
+    
     const form = useRef();
     const [done, setDone] = useState(false);
 
@@ -15,7 +15,7 @@ function Contact() {
         .then((result) => {
             console.log(result.text);
             setDone(true);
-        }, (error) => {
+        }, (error )=> {
             console.log(error.text);
         });
         e.target.reset(); //for clearing form after submission
@@ -33,7 +33,7 @@ function Contact() {
         <div className="c-right">
             <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="user_name" className='user' placeholder="Name" required/>
-                <input type="email" name="email" className='user' placeholder="Email" required/>
+                <input type="email" name="user_email" className='user' placeholder="Email" required/>
                 <textarea name="message" className="user" placeholder="Message" required/>
                 <input type="submit" value="Send" className='buttonn' />
                 <span>{done && "Thanks for contacting me!!"}</span>
