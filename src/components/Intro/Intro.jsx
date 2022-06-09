@@ -26,6 +26,7 @@ function Intro() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
+    
     <div className="intro">
       <div className="i-left">
         <div className="i-name">

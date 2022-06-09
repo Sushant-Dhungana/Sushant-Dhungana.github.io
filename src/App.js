@@ -17,7 +17,7 @@ function App() {
       background: darkMode? 'black': '',
       color: darkMode? 'white': ''
     }}>
-      <Nav/>
+    <Nav/>
     <Intro/>
     <Experience/>
     <Contact/>
