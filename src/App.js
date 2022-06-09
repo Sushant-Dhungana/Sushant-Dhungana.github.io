@@ -1,6 +1,6 @@
 import React from "react"
 import Intro from './components/Intro/Intro';
-import Nav from './components/Navbar/Nav';
+import Nav from './components/Navbar/Nav.jsx';
 import Experience from './components/experience/Experience';
 import Footer from './components/Footer/Footer';
 import Contact from './components/contact/Contact';
@@ -12,17 +12,20 @@ function App() {
   const theme = useContext (themeContext);
   const darkMode = theme.state.darkMode;
   return (
+    <>
+
     <div className="App"
       style={{
       background: darkMode? 'black': '',
       color: darkMode? 'white': ''
     }}>
-    <Nav/>
+
     <Intro/>
     <Experience/>
     <Contact/>
     <Footer/>
     </div>
+    </>
   );
 }
 

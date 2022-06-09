@@ -1,3 +1,5 @@
+
+   
 import React from 'react';
 import './nav.css';
 import {AiOutlineHome} from 'react-icons/ai';
@@ -15,8 +17,7 @@ function Nav() {
       <a href="" onClick={()=> setActiveNav('#home')} className={activeNav === '#home' ? 'active' : ''} ><AiOutlineHome/></a>
       <a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUserDelete/></a>
       <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><AiOutlineContacts/></a>
-      <Toggle/>
-       </nav>
+      <Toggle/> </nav>
     
 
   )

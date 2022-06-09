@@ -11,12 +11,11 @@ import boy from "../../img/boy.png";
 import thumbup from "../../img/thumbup.png";
 import Logoreact from "../../img/logoreact.png";
 import FloatingDiv from "../FloatingDiv/FloatingDiv.jsx";
-import Laptop from "../../img/laptop.png";
-import { motion } from "framer-motion";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { MdLocationPin } from "react-icons/md";
 import Aos from "aos";
+import Nav from "../Navbar/Nav";
 
 function Intro() {
   useEffect(() => {
@@ -26,6 +25,8 @@ function Intro() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
+    <>
+    <Nav/>
     
     <div className="intro">
       <div className="i-left">
@@ -84,15 +85,6 @@ function Intro() {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={boy} alt="" />
-        <motion.img
-         style={{ color: darkMode ? "white" : "" }}
-          initial={{ left: "-26%" }}
-          whileInView={{ left: "-14%" }}
-          transition={transition}
-          src={Laptop}
-          alt=""
-         
-        />
 
         {/* <div style={{top: '20%', left:"60%"}} > */}
         <div data-aos="fade-left" className="right-floatingdiv">
@@ -119,6 +111,7 @@ function Intro() {
         ></div>
       </div>
     </div>
+    </>
   );
 }
 
