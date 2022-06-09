@@ -1,6 +1,6 @@
 // intro page and is divided into two sections i-left and i-right
 
-import React from "react";
+import React,{useEffect} from "react";
 import "./Intro.css";
 import Github from "../../img/github.png";
 import Linkedin from "../../img/linkedin.png";
@@ -16,10 +16,18 @@ import { motion } from "framer-motion";
 import { themeContext } from "../../Context";
 import { useContext } from "react";
 import { MdLocationPin } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function Intro() {
-
+  useEffect(() => {
+    AOS.init({offset: 200,
+      duration: 800,
+      easing: 'ease-in-quad',
+      delay: 100,});
+    AOS.refresh();
+  }, [])
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -93,11 +101,11 @@ function Intro() {
         />
 
         {/* <div style={{top: '20%', left:"60%"}} > */}
-        <div  className="right-floatingdiv">
+        <div data-aos="fade-left" className="right-floatingdiv">
           <FloatingDiv image={Logoreact} txt1="Web" txt2="Developer" />
         </div>
         {/* <div style={{top: '18rem', left:'0rem' }}> */}
-        <div  className="left-floatingdiv">
+        <div data-aos="fade-right" className="left-floatingdiv">
           <FloatingDiv image={thumbup} txt1="FrontEnd" txt2="Designer" />
         </div>
 
