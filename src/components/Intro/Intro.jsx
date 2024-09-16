@@ -45,7 +45,7 @@ function Intro() {
           ]}
           loop={Infinity}
           /> */}
-          <span>Software Engineer</span>
+          <span>Software Engineerrrrr</span>
 
           <span style={{ color: darkMode ? "white" : "" }}>
             <MdLocationPin />
