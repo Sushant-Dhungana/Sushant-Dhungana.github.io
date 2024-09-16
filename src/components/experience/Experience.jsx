@@ -22,7 +22,7 @@ function Experience() {
     <section id="about">
       <div className="container experience__container">
         <div data-aos="fade-right"  className="experience__webdesign">
-          <h3>Web Development</h3>
+          <h3>Software Development</h3>
           <div className="experience__content">
             <article className="experience__details">
               <VerifiedIcon className="experience__details-icon" />
@@ -41,14 +41,14 @@ function Experience() {
             <article className="experience__details">
               <VerifiedIcon className="experience__details-icon" />
               <div>
-                <h4>Flutter</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>Databases and API'S</h4>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
         </div>
 
-        <div data-aos="fade-left" className="experience__webdevelopment">
+        <div data-aos="fade-left" className="experience__development">
           <h3>Qualification</h3>
           <div className="experience__content">
             <article className="experience__details">

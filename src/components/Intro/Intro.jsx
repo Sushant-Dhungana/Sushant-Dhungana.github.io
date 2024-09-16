@@ -53,7 +53,7 @@ function Intro() {
           </span>
 
           <span>
-            Frontend Developer with excellent level of development skills.
+            Software Developer with excellent level of development skills.
           </span>
         </div>
         <button
@@ -102,11 +102,11 @@ function Intro() {
 
         {/* <div style={{top: '20%', left:"60%"}} > */}
         <div data-aos="fade-left" className="right-floatingdiv">
-          <FloatingDiv image={Logoreact} txt1="Web" txt2="Developer" />
+          <FloatingDiv image={Logoreact} txt1="Software" txt2="Engineer" />
         </div>
         {/* <div style={{top: '18rem', left:'0rem' }}> */}
         <div data-aos="fade-right" className="left-floatingdiv">
-          <FloatingDiv image={thumbup} txt1="FrontEnd" txt2="Designer" />
+          <FloatingDiv image={thumbup} txt1="Software" txt2="Developer" />
         </div>
 
         <div
